@@ -18,7 +18,7 @@ describe('dogController.getDogImage',() => {
             "status": "success"
         }
 
-        vi.mocked(getRandomDogImage).mockResolvedValueOnce(mockDogData as any)
+        vi.mocked(getRandomDogImage).mockResolvedValueOnce(mockDogData)
 
         const req: any = {}
         const res = createMockResponse()
